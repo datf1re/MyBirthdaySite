@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Рождения, Моя Любимая! ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FDFBF7;
+            --card-bg: #F5EBE0;
+            --accent-burgundy: #800020;
+            --accent-soft-red: #C94A4A;
+            --text-color: #3D2B1F;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Анимация падающих сердечек */
+        .heart {
+            position: fixed;
+            color: var(--accent-soft-red);
+            font-size: 20px;
+            user-select: none;
+            pointer-events: none;
+            animation: fall linear infinite;
+            z-index: 100;
+            opacity: 0.7;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Шапка сайта */
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(180deg, #F5EBE0 0%, #FDFBF7 100%);
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 3.5rem;
+            color: var(--accent-burgundy);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #665244;
+            max-width: 500px;
+            font-weight: 300;
+        }
+
+        .scroll-hint {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: var(--accent-soft-red);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Галерея карточек */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(128, 0, 32, 0.08);
+            border: 1px solid #F0E2D4;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background-color: var(--card-bg);
+            color: var(--accent-burgundy);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #4A3A2F;
+        }
+
+        /* Финальное поздравление */
+        .final-message {
+            background-color: var(--card-bg);
+            border-radius: 25px;
+            padding: 30px;
+            text-align: center;
+            margin: 50px 0 80px 0;
+            border: 2px dashed var(--accent-soft-red);
+        }
+
+        .final-message h2 {
+            font-family: 'Caveat', cursive;
+            font-size: 2.8rem;
+            color: var(--accent-burgundy);
+            margin-bottom: 15px;
+        }
+
+        .final-message p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #8C7A6B;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <h1>С Днём Рождения, Моя Замечательная! ❤️</h1>
+        <p class="subtitle">Этот маленький сайт я сделал специально для тебя, чтобы напомнить, как сильно я тебя люблю и ценю каждый наш миг вместе.</p>
+        <div class="scroll-hint">Листай ниже ↓</div>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="container">
+
+        <!-- Фото 1 -->
+        <div class="card">
+            <span class="card-tag">Самая Нежная</span>
+            <img src="https://i.ibb.co/gFvhsSqY/79350302-e5f2-4a6c-9119-5b88bf67ae70.jpg" alt="Фото 1">
+            <p>Рядом с тобой время будто останавливается. Твоя обворожительная улыбка делает любой день теплее и счастливее.</p>
+        </div>
+
+        <!-- Фото 2 -->
+        <div class="card">
+            <span class="card-tag">Самая Милая</span>
+            <img src="https://i.ibb.co/dsnyLrCD/cf8b0c97-7022-4820-ba48-c00107afc853.jpg" alt="Фото 2">
+            <p>Обожаю твои искренние эмоции и милый взгляд. С тобой так легко, уютно и по-настоящему хорошо.</p>
+        </div>
+
+        <!-- Фото 3 -->
+        <div class="card">
+            <span class="card-tag">Самая Забавная</span>
+            <img src="https://i.ibb.co/RpgFX2qy/9544cf91-f17a-45d9-a1a8-fb4adfd52a62.jpg" alt="Фото 3">
+            <p>Ты умеешь поднимать настроение за секунду! Наше чувство юмора и умение быть дурашливыми - это самое лучшее.</p>
+        </div>
+
+        <!-- Фото 4 -->
+        <div class="card">
+            <span class="card-tag">Мой Уют</span>
+            <img src="https://i.ibb.co/JRMV9JFQ/8c4517f9-1581-4247-bdff-c91c30f56b08.jpg" alt="Фото 4">
+            <p>Спасибо за каждую поездку, за каждый совместный кадр и за то, что с тобой всегда комфортно.</p>
+        </div>
+
+        <!-- Фото 5 -->
+        <div class="card">
+            <span class="card-tag">Самая Яркая</span>
+            <img src="https://i.ibb.co/FkZztf1x/d19f8010-1c27-40dd-95ef-b8fdb80fe1ca.jpg" alt="Фото 5">
+            <p>Красный цвет тебе безумно идёт! Ты привлекаешь внимание, чаруешь и остаёшься самой прекрасной.</p>
+        </div>
+
+        <!-- Фото 6 -->
+        <div class="card">
+            <span class="card-tag">Настоящая Искренность</span>
+            <img src="https://i.ibb.co/gFdMS9N5/7e194f3c-0c6f-446c-b145-16ac54e25a58.jpg" alt="Фото 6">
+            <p>Люблю твою естественность, твою открытость и твои неподдельные эмоции. Ты прекрасна во всём!</p>
+        </div>
+
+        <!-- Фото 7 -->
+        <div class="card">
+            <span class="card-tag">Очаровательная</span>
+            <img src="https://i.ibb.co/Pzf5zpd4/19d0d2d7-7b33-4b09-8ee5-08b1e1959580.jpg" alt="Фото 7">
+            <p>Даже в вечерних огнях твои глаза сияют ярче всех. Не могу перестать тобой восхищаться.</p>
+        </div>
+
+        <!-- Фото 8 -->
+        <div class="card">
+            <span class="card-tag">Моя Душа</span>
+            <img src="https://i.ibb.co/B2z4CkzF/8518a504-80d5-4d48-a2e4-70de27b987d6.jpg" alt="Фото 8">
+            <p>Мы идеальная команда. Спасибо тебе за твою поддержку, любовь и теплоту, которую ты мне даришь.</p>
+        </div>
+
+        <!-- Фото 9 -->
+        <div class="card">
+            <span class="card-tag">Солнечная</span>
+            <img src="https://i.ibb.co/fVXgp4Lk/3f046969-8583-4b13-92e5-87bb28b11ae1.jpg" alt="Фото 9">
+            <p>Желаю тебе всегда сиять от счастья, улыбаться солнцу и воплощать абсолютно все свои мечты!</p>
+        </div>
+
+        <!-- Финальное письмо -->
+        <div class="final-message">
+            <h2>С праздником, любимая! 🎉</h2>
+            <p>С Днём Рождения! Хочу, чтобы ты знала: ты невероятный человек, который делает мою жизнь ярче и добрее каждый день.</p>
+            <p>Оставайся всегда такой же прекрасной, глубокой, веселой и неповторимой. Я всегда буду рядом, чтобы делать тебя счастливой.</p>
+            <p style="font-weight: 600; color: var(--accent-burgundy); margin-top: 20px;">Очень сильно люблю тебя! ❤️</p>
+        </div>
+
+    </div>
+
+    <footer>С любовью, специально для тебя ✨</footer>
+
+    <!-- Скрипт падающих сердечек -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            heart.style.fontSize = Math.random() * 10 + 15 + 'px';
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+
+        setInterval(createHeart, 400);
+    </script>
+</body>
+</html>
